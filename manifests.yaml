@@ -25,6 +25,8 @@ metadata:
   name: post-delete-secret
   annotations:
     argocd.argoproj.io/hook: PostDelete
+  labels:
+    app.kubernetes.io/instance: test
 type: Opaque
 data: {}
   #correct: Y29ycmVjdA==
